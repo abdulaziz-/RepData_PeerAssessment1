@@ -8,6 +8,11 @@ output:
 
 ## Loading and preprocessing the data
 
+This part loads the data into an R data frame.
+
+```{r}
+
+```
 
 
 ## What is mean total number of steps taken per day?
