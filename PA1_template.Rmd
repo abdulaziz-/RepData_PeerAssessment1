@@ -11,7 +11,12 @@ output:
 This part loads the data into an R data frame.
 
 ```{r}
-
+url <- 'https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip'
+temp <- tempfile()
+download.file(url, temp)
+unzip(temp,"activity.csv")
+data <- read.csv("activity.csv")
+unlink(temp)
 ```
 
 
